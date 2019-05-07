@@ -27,5 +27,4 @@ gradle/
 */.ipynb_checkpoints/*
 *.jpg
 samples/h5py/data.h5
-samples/tensorflow/
 *.h5
