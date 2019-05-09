@@ -3,13 +3,11 @@ import tensorflow as tf
 
 """
 http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html
+https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist
 """
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 print(mnist.train.images.shape)
 print(mnist.train.labels.shape)
-
-x_data = mnist.train.images
-y_data = mnist.train.labels
 
 x = tf.placeholder(tf.float32, [None, 784])
 y_ = tf.placeholder(tf.float32, [None, 10])

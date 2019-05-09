@@ -26,6 +26,10 @@ import tensorflow as tf
 
 SOURCE_URL = 'http://yann.lecun.com/exdb/mnist/'
 
+"""
+https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist
+"""
+
 
 def maybe_download(filename, work_directory):
     """Download the data from Yann's website, unless it's already here."""
