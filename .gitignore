@@ -28,3 +28,6 @@ gradle/
 *.jpg
 samples/h5py/data.h5
 *.h5
+/__pycache__/
+*/__pycache__/
+*/__pycache__/*
