@@ -63,11 +63,11 @@ for vb in vbs:
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    for i in range(2000):
+    for i in range(20000):
         x_batch, y_batch = mnist.train.next_batch(64)
         train_step.run({x: x_batch, y_: y_batch, keep_prob: 0.5})
         train_accuracy = accuracy.eval({x: x_batch, y_: y_batch, keep_prob: 1.0})
-        if i % 50 == 0:
+        if i % 100 == 0:
             print('step %d, trainning accurucy: %g' % (i, train_accuracy))
 
     print("test accuracy %g" % accuracy.eval({x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
